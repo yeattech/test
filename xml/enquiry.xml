@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>Back To Top</para>
+  <para>
+    <inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/>
+  </para>
+  <orderedlist>
+    <listitem>
+      <para><link linkend="">Timeline +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="about-me.html">About Me</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+    </listitem>
+    <listitem>
+      <para><link linkend="">Enchancement +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+    </listitem>
+  </orderedlist>
+  <sect1>
+    <title>Enquiry Form </title>
+    <para>Personal Information </para>
+    <informaltable frame="all">
+      <tgroup cols="2"><tbody><row><entry><para>1. First Name: </para></entry><entry><para><anchor id="first_name"/></para></entry></row><row><entry><para>2. Last Name: </para></entry><entry><para><anchor id="last_name"/></para></entry></row><row><entry><para>3. Email: </para></entry><entry><para><anchor id="email"/></para></entry></row><row><entry><para>4. Phone Number: </para></entry><entry><para><anchor id="phone_number"/></para></entry></row></tbody></tgroup>
+    </informaltable>
+    <para>Address </para>
+    <informaltable frame="all">
+      <tgroup cols="2"><tbody><row><entry><para>1. State:</para></entry><entry><para><anchor id="state"/> </para></entry></row><row><entry><para>2. City / town: </para></entry><entry><para><anchor id="city"/></para></entry></row><row><entry><para>3. Street address: </para></entry><entry><para><anchor id="address"/></para></entry></row><row><entry><para>4. Postcode: </para></entry><entry><para><anchor id="postcode"/></para></entry></row></tbody></tgroup>
+    </informaltable>
+    <para>Enquiry Information </para>
+    <informaltable frame="all">
+      <tgroup cols="2"><tbody><row><entry><para>1. Character &amp; Mechanic: </para></entry><entry><para><anchor id="product"/>uclist()list2()list3()list4() </para></entry></row><row><entry><para>2. Subject: </para></entry><entry><para><anchor id="item"/></para></entry></row><row><entry><para>3. Comment: </para></entry><entry><para><anchor id="need-explain"/></para></entry></row></tbody></tgroup>
+    </informaltable>
+    <para>Content / Website Feedback (Optional) </para>
+    <informaltable frame="all">
+      <tgroup cols="2"><tbody><row><entry><para>1. Please rate your experience using this website (1= bad 5= good): </para></entry><entry><para><anchor id="improvement"/></para></entry></row></tbody></tgroup>
+    </informaltable>
+    <para>  </para>
+    <para><anchor id="ct"/><inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/> </para>
+    <para>The Gundam information center that provides information of your favourite Gundam and characters.</para>
+    <para>Contact Me</para>
+    <para>Phone: +6013-272-8183</para>
+    <para>Location: 2-chōme-44-10 Kamiigusa, Suginami City, Tokyo 167-0023, Japan</para>
+    <para>Quick Links</para>
+    <orderedlist>
+      <listitem>
+        <para><olink targetdocent="index.html">Homepage</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="about-me.html">About Me</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+      </listitem>
+    </orderedlist>
+    <para>Timeline</para>
+    <orderedlist>
+      <listitem>
+        <para><olink targetdocent="uc.html">Universal Century</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="ce.html">Cosmic Era</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="ad.html">Anno Domini</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="bf.html">Build Fighter</olink> </para>
+      </listitem>
+    </orderedlist>
+  </sect1>
+</article>

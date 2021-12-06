@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>Back To Top</para>
+  <para>
+    <inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/>
+  </para>
+  <orderedlist>
+    <listitem>
+      <para><link linkend="">Timeline +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="about-me.html">About Me</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+    </listitem>
+    <listitem>
+      <para><link linkend="">Enchancement +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+    </listitem>
+  </orderedlist>
+  <para>Enhancement</para>
+  <sect1>
+    <title>Enchancement 2</title>
+    <sect2>
+      <title>Drop-down List</title>
+      <para>The drop-down list is almost the same with normal drop-down list just that it is coded with Javascript and the subject title will automatically change when visitor click the link in the UC / CE / AD / BF pages. </para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://swinburnesarawak.instructure.com/courses/780/pages/week-6-introduction?module_item_id=37972">https://swinburnesarawak.instructure.com/courses/780/pages/week-6-introduction?module_item_id=37972</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>Error input Alert </title>
+      <para>I added an error alert effect to alert the visitors when filling in the enquiry form. It only shows when the visitor's input does not meet the imput requirement of the form. </para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://swinburnesarawak.instructure.com/courses/780/pages/week-6-introduction?module_item_id=37972">https://swinburnesarawak.instructure.com/courses/780/pages/week-6-introduction?module_item_id=37972</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>Back To Top</title>
+      <para>Since my pages have quite a lot of information, i've added a back to top button so that the visitors can directly be scrolled to the top without the need of keep scrolling to the top. </para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement1.html">Enhancement 1</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement2.html">Enhancement 2</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=Pd71ZZeIhaI">https://www.youtube.com/watch?v=Pd71ZZeIhaI</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>Timer</title>
+      <para>For the next enhancement, i've added a timer. By doing so, visitors are able to know the current time by looking at the timer added which will be displaying the current time which will keep refreshing every second. </para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.plus2net.com/javascript_tutorial/clock.php">https://www.plus2net.com/javascript_tutorial/clock.php</ulink></para>
+        <para><inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/> </para>
+        <para>The Gundam information center that provides information of your favourite Gundam and characters.</para>
+        <para>Contact Me</para>
+        <para>Phone: +6013-272-8183</para>
+        <para>Location: 2-chōme-44-10 Kamiigusa, Suginami City, Tokyo 167-0023, Japan</para>
+        <para>Quick Links</para>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+        <para>Timeline</para>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="uc.html">Universal Century</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">Cosmic Era</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">Anno Domini</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">Build Fighter</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+    </sect2>
+  </sect1>
+</article>

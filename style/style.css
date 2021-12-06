@@ -1,0 +1,1701 @@
+
+/* Description: */
+/* Author: Jonathan Tang Zuo Sheng */
+/* Date Started Doing: 6 September 2021*/
+/* Date Published:  */
+/* Due Date:  */
+
+
+
+
+html{
+	background-color:#282828;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  z-index: 1;
+  margin: 0;
+  background-color: #1a1a1a;
+  border-bottom: 5px solid #33f6e5 ;
+  max-height: 70px;
+}
+.header a {
+  text-decoration: none;
+  color: #33f6e5;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.menu-items li {
+  transition: 0.8s ease-in-out;
+  box-shadow: inset 0 0 0 0 #33f6e5;
+}
+.menu-items li:hover {
+  background-color: #1a1a1a;
+  box-shadow: inset 250px 0 0 0 #888888;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  margin-left: 0px;
+  height: 50px;
+  width: 170px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu,
+.menu-right {
+  position: absolute;
+  background: #1a1a1a;
+  width: 100%;
+  top: 90px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.menu-right {
+  top: 0;
+  left: 120%;
+  font-size: 3.45rem;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-right:hover .menu-right {
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* nav menu button */
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  content: "";
+  position: absolute;
+}
+.menu-btn__lines,
+.menu-btn__lines::before,
+.menu-btn__lines::after {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #33f6e5;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__lines::before {
+  transform: translateY(-0.5rem);
+}
+.menu-btn__lines::after {
+  transform: translateY(0.5rem);
+}
+/* animation */
+.menu-btn.open .menu-btn__lines {
+  transform: translateX(2rem);
+  background: transparent;
+}
+.menu-btn.open .menu-btn__lines::before {
+  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+  background: #33f6e5;
+}
+.menu-btn.open .menu-btn__lines::after {
+  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+  background: #33f6e5;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 941px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .header .menu-items {
+    border-top: 5px solid #33f6e5 ;
+    position: absolute;
+    width: 100%;
+    max-width: 280px;
+    top: 100%;
+    right: 0;
+    background: #1a1a1a;
+    display: block;
+    padding: 1rem;
+    line-height: 3rem;
+    overflow-y: auto;
+    transform: translateY(-200vh);
+    transition: transform 0.4s ease-out;
+  }
+  .menu-items.open {
+    transform: translateY(0);
+  }
+
+  .menu-items li {
+    margin: 15px 5px;
+  }
+  .menu-items li a {
+    padding: 0 1rem;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .menu-items li:hover {
+    background-color: transparent;
+  }
+
+  /* Sidemenu-nested */
+  .menu-items .dropdown-menu,
+  .menu-items .menu-right {
+    position: static;
+    opacity: 1;
+    top: 5rem;
+    visibility: visible;
+    padding-left: 2rem;
+    width: 100%;
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  .expand-btn.open + .expandable {
+    max-height: 100%;
+    transform: scaleY(1);
+  }
+
+  .expandable li {
+    margin: 0;
+  }
+  .expandable li a {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Body (bassically codes that all pages share)*/
+body{
+	font-family: Montserrat, sans-serif;
+	line-height: 1.2;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+.container-1-1{
+	width: 90%;
+  margin: auto;
+  background-color: #404040;
+}
+
+.container-1-2{
+	width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.containerinformation{
+	margin: auto;
+  width: 80%;
+}
+
+.container-information-adjust h2{
+  color:	#33f6e5;
+  padding-top:10px;
+	font-size: 50px;
+  text-decoration-line: underline;
+}
+
+.container-information-adjust h3{
+  color:	#a0b6f7;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-decoration-line: underline;
+}
+
+.container-information-adjust h4{
+  color:	#cd9bfc;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.container-information-adjust h5{
+  color: #a0b6f7;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.container-information-adjust p{
+  color:	#f2f261;
+  font-size: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container-information-adjust li{
+  color:	#e6fdfd;
+  font-size: 19px;
+  padding-top: 2px;
+  padding-bottom: 8px;
+}
+
+.container-information-adjust-divider{
+  border-top: 2px solid #33f6e5;
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 10px;
+  max-height: 10%;
+}
+
+.video-wrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+} 
+
+.video-wrapper iframe{
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 100px;
+  height: 90%;
+  width: 100%;
+} 
+
+.button-container{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.java-btn{
+  padding: 8px;
+  width: 500px;
+  height: 50px;
+  background-color: #f2f261;
+  color: #28334aff;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 #f2f261;
+  transition: ease-out 0.5s;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 30px;
+}
+
+.java-btn:hover{
+  box-shadow: inset 500px 0 0 0 #21d072;
+  cursor: pointer;
+  color: #fffe87  ;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS style for footer */
+.footer-logo{
+  width: 180px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+
+  height: auto;
+  background-color: #1a1a1a;
+  border-top: 5px solid #33f6e5;
+}
+.footer .col {
+  width: 25%;
+  max-height: 310px;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 0px 200px 20px
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  padding: 25px 0px 20px 0px;
+  color: #a0b6f7;
+}
+
+.footer .col p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  padding: 0px 0px 5px 0px;
+  color: #ba76fa;
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.footer .col li a {
+  color: #ba76fa;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
+  cursor: pointer;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  text-decoration: none;
+}
+.footer .col li a:hover {
+  color: #f2f261;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  padding-bottom: 10px;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+    .footer .col {
+      width: 100%;
+    }
+}
+
+
+
+
+
+/* CSS style for homepage */ 
+.homepage{
+	background-image:url(image/gundam-wallpaper-3840x2160_54.jpg);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 5px solid #33f6e5 ;
+}
+
+.welcome{
+	text-align: center;
+	color:		#FFFFE0;
+	padding-top: 220px;
+	font-size: 70px;
+	margin-bottom:10px;
+	text-shadow: 3px 3px 3px black;
+  font-weight: bold;
+}
+
+.purpose{
+	text-align: center;
+	color: 		#FFDAB9;
+	margin-top:100px;
+	font-size: 35px;
+	padding-bottom: 280px;
+	text-shadow: 4px 4px 2px black;
+}
+
+.youtube_video{
+	text-align: center;
+	color:	#FFFFE0;
+  padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 40px;
+}
+
+.news_gundam{
+  border-top: 5px solid #33f6e5 ;
+  padding-top: 30px;
+	padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.news_gundam h2{
+	text-align: center;
+	color:		#FFFFE0;
+	font-size: 62px;
+}
+
+.index-table{
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.news_gundam a{
+  text-align: center;
+  color:		#a0b6f7;
+  padding-bottom: 20px;
+  font-size: 20px;
+  height: 300px;
+}
+
+.news_gundam span{
+  text-align: center;
+  color:		#cd9bfc;
+}
+
+.index-table-pic{
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid #33f6e5;
+}
+
+
+@media all and (max-width :1000px) {
+  .news_gundam a{
+    text-align: center;
+    color:		#a0b6f7;
+    padding-bottom: 20px;
+    font-size: 20px;
+    max-width: 200px;
+  }
+  
+  .news_gundam span{
+    text-align: center;
+    color:		#cd9bfc;
+  }
+  
+  .index-table-pic{
+    width:200px;
+    border-radius: 10px;
+    border: 3px solid #33f6e5;
+  }
+} 
+
+@media all and (max-width :700px){
+  .news_gundam a{
+    text-align: center;
+    color:		#a0b6f7;
+    padding-bottom: 20px;
+    font-size: 20px;
+    max-width: 150px;
+  }
+  
+  .news_gundam span{
+    text-align: center;
+    color:		#cd9bfc;
+  }
+  
+  .index-table-pic{
+    width:150px;
+    border-radius: 10px;
+    border: 3px solid #33f6e5;
+  }
+}
+
+@media all and (max-width :400px) {
+  .news_gundam a{
+    text-align: center;
+    color:		#a0b6f7;
+    padding-bottom: 20px;
+    font-size: 20px;
+    max-width: 100px;
+  }
+  
+  .news_gundam span{
+    text-align: center;
+    color:		#cd9bfc;
+  }
+  
+  .index-table-pic{
+    width:100px;
+    border-radius: 10px;
+    border: 3px solid #33f6e5;
+  }
+} 
+
+
+
+
+
+/* CSS style for timeline */ 
+.timeline{
+	margin: auto;
+	padding: 10px;
+  padding-top: 155px;
+  padding-bottom: 32px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(image/exia.png);  
+ background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline h1{
+  text-align: center ;
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 60px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.timeline p{
+  text-align: center;
+	color:	#f2f261;
+  padding-top: 20px;
+	padding-bottom: 150px;
+	font-size: 25px;
+  text-shadow: 3px 3px 3px black;
+}
+
+.container-timeline1{
+	margin: auto;
+  border-top: 5px solid #33f6e5 ;
+  border-bottom: 5px solid #33f6e5 ;
+  text-align: center;
+}
+
+.container-timeline2{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/rx78-2.jpg);  
+  background-position: 55% 25%;
+  background-size: cover;
+}
+
+.container-timeline3{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/god-gundam.jpg);
+  background-position: 50% 40%;
+  background-size: cover;  
+}
+
+.container-timeline4{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/wing-zero-ew.jpg);
+  background-position: 50% 25%;
+  background-size: cover;  
+}
+
+.container-timeline5{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/gundam-x.jpg);
+  background-position: 50% 15%;
+  background-size: cover;  
+}
+
+.container-timeline6{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/Turn-A-Gundam-vs-Turn-X.png);
+  background-position: 50% 50%;
+  background-size: cover;  
+}
+
+.container-timeline7{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/strike-freedom.jpg);
+  background-position: 40% 50%;
+  background-size: cover; 
+}
+
+.container-timeline8{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/gundam-00-raiser.jpg);
+  background-position: 50% 20%;
+  background-size: cover; 
+}
+
+.container-timeline9{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/Gundam.AGE.FX.jpg);
+  background-position: 50% 10%;
+  background-size: cover; 
+}
+
+.container-timeline10{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/gundam-reconguista-in-g.jpg);
+  background-position: 60% 10%;
+  background-size: cover; 
+}
+
+.container-timeline11{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/mobile-suit-gundam-iron-blooded-orphans.jpg);
+  background-position: 50% 30%;
+  background-size: cover; 
+}
+
+.container-timeline12{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/star-build-strike-gundam.jpg);
+  background-position: 50% 45%;
+  background-size: cover; 
+}
+
+.container-timeline13{
+	margin: auto;
+	padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/SD-GUNDAM-WORLD.jpg);
+  background-position: 50% 50%;
+  background-size: cover; 
+}
+
+.timeline-info h2{
+  color:	#a0b6f7;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.timeline-info h3{
+  color:	#a0b6f7;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.timeline-info p{
+  color:	#f2f261;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.timeline-info li{
+  color:	#e6fdfd;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.timeline-byn-1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto auto;
+  width: 250px;
+  height: 40px;
+  border: none;
+  color: #28334aff;
+  background-color: #f2f261;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 rgb(255, 149, 62);
+  transition: ease-out 0.5s;
+  font-size: 28px;
+  outline: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.timeline-byn-1:hover{
+  box-shadow: inset 250px 0 0 0 #f65058ff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.timeline-byn-2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto auto;
+  width: 250px;
+  height: 40px;
+  border: none;
+  color: #28334aff;
+  background-color: #f2f261;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 #aaf81a;
+  transition: ease-out 0.5s;
+  font-size: 28px;
+  outline: none;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.timeline-byn-2:hover{
+  box-shadow: inset 250px 0 0 0 #21d072;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+
+
+
+
+/* CSS style for uc.html */ 
+.container-uc{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/rx78-2.jpg);  
+  background-position: 55% 25%;
+  background-size: cover;
+}
+
+.container-uc h1{
+	color:	#33f6e5;
+  padding-top:10px;
+	padding-bottom: 20px;
+  padding-left: 30px;
+	font-size: 65px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-uc li{
+  margin: auto;
+  width: 95%;
+  color:	#b8fcfc;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.uc_pic{
+	width: 300px;
+	height: 500px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.uc_pic_square{
+  min-height: 0px;
+  min-width: 0px;
+	max-width: 300px;
+	max-height: 300px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.uc_pic_landscape{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+@media all and (max-width :812px) {
+  .uc_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;	
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .uc_pic_square{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+    max-height: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }  
+  .uc_pic_landscape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}
+
+
+/* CSS style for ce.html */ 
+.container-ce{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/strike-freedom.jpg);
+  background-position: 40% 45%;
+  background-size: cover; 
+}
+
+.container-ce h1{
+	color:	#33f6e5;
+  padding-top:10px;
+	padding-bottom: 20px;
+  padding-left: 30px;
+	font-size: 65px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-ce li{
+  margin: auto;
+  width: 95%;
+  color:	#b8fcfc;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.ce_pic{
+	width: 300px;
+	height: 500px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.ce_pic_square{
+  height: 375px;
+  width: 375px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.ce_pic_landscape{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+@media all and (max-width :812px) {
+  .ce_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;	
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .ce_pic_square{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 375px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }  
+  .ce_pic_landscape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}
+
+
+
+/* CSS style for ad.html */ 
+.container-ad{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/gundam-00-raiser.jpg);
+  background-position: 50% 40%;
+  background-size: cover; 
+}
+
+.container-ad h1{
+	color:	#33f6e5;
+  padding-top:10px;
+	padding-bottom: 20px;
+  padding-left: 30px;
+	font-size: 65px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-ad li{
+  margin: auto;
+  width: 95%;
+  color:	#b8fcfc;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.ad_pic{
+	width: 300px;
+	height: 500px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.ad_pic_square{
+  height: 425px;
+  width: 375px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.ad_pic_landscape{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+@media all and (max-width :812px) {
+  .ad_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;	
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .ad_pic_square{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 425px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }  
+  .ad_pic_landscape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}
+
+
+
+/* CSS style for bf.html */ 
+.container-bf{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(image/star-build-strike-gundam.jpg);
+  background-position: 50% 25%;
+  background-size: cover; 
+}
+
+.container-bf h1{
+	color:	#33f6e5;
+  padding-top:10px;
+	padding-bottom: 20px;
+  padding-left: 30px;
+	font-size: 65px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-bf li{
+  margin: auto;
+  width: 95%;
+  color:	#b8fcfc;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.bf_pic{
+	width: 300px;
+	height: 500px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.bf_pic_square{
+  height: 425px;
+  width: 375px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+  padding: 10px;
+}
+
+.bf_pic_landscape{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+@media all and (max-width :812px) {
+  .bf_pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;	
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .bf_pic_square{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 425px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }  
+  .bf_pic_landscape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+    width: 375px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+/* CSS style for Enquiry page */
+.container-enquiry1{
+  padding-bottom: 30px;
+}
+
+.enquiry-h1{
+  text-align: center;
+	color: 		#f2f261;
+	font-size: 65px;
+	border-bottom: 	#a0b6f7 3.5px solid;
+}
+
+.enquiry-span{
+	color: 		#f2f261;
+	font-size: 35px;
+  border-bottom: 	#a0b6f7 3.5px solid;
+  margin-top: 300px;
+}
+
+.enquiry-lable{
+  text-align: center;
+	color: 		#ffffcc;
+	font-size: 20px;
+}
+
+.enquiry-btn{
+  width: 200px;
+  height: 50px;
+  background-color: #f2f261;
+  color: #28334aff;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 #aaf81a;
+  transition: ease-out 0.5s;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 39%;
+  margin-left: 39%;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 28px;
+}
+
+.enquiry-btn:hover{
+  box-shadow: inset 200px 0 0 0 #21d072;
+  cursor: pointer;
+  color: #fffe87  ;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* CSS style for text and image About Me page */
+.container-about{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 155px;
+  padding-bottom: 231px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(image/exia.png);  
+ background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-about h1{
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 60px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.Who_am_i{
+	text-align: center;
+	color: 		#f2f261;
+	margin-top: 0px;
+	font-size: 70px;
+	margin-bottom: 30px;
+	border-bottom: 3.5px solid #33f6e5;
+}
+
+.mepic{
+	min-height: 368px;
+	min-width: 250px;
+	width: 25%;
+	height: 25%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	margin-bottom: 1%;
+	border: 	#f2f261 10px groove;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.description h3{
+  text-align: center;
+  font-size: 30px;
+  color: #a0b6f7;
+  padding-top: 20px;
+}
+
+.description h4{
+  text-align: center;
+  font-size: 27px;
+  color: #a0b6f7;
+}
+
+.description p{
+  text-align: center;
+  font-size: 21px;
+  color: #a0b6f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.description span{
+  text-align: center;
+  color: #f2f261;
+}
+
+#about-me-table th{
+  text-align: center;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffff29;
+  border: 2px solid #1a1a1a;
+}
+
+#about-me-table td{
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #ffff29;
+  border: 2px solid #1a1a1a;
+}
+
+.about-me-table0{
+  background-color: #1f1f1f;
+}
+.about-me-table1{
+  background-color: #5e5e5e;
+}
+.about-me-table2{
+  background-color: #9b9b9b;
+}
+
+.about-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto auto;
+  width: 250px;
+  height: 40px;
+  border: none;
+  color: #28334aff;
+  background-color: #33f6e5;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 #33f6e5;
+  transition: ease-out 0.5s;
+  font-size: 30px;
+  outline: none;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ffff29;
+  text-decoration: none;
+  text-align: center;
+}
+
+.about-button:hover{
+  box-shadow: inset 250px 0 0 0 #a0b6f7;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* CSS style for disclaimer */
+.container-disclaimer1{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 155px;
+  padding-bottom: 231px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(image/exia.png);  
+ background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-disclaimer1 h1{
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 60px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-disclaimer-ul{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border: 3px solid #a0b6f7;
+}
+
+.container-disclaimer-li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fffe87;
+  font-size: 20px;
+}
+
+.container-disclaimer-a{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #33f6e5
+} 
+
+
+
+
+
+/* CSS style for Enhancement */
+.container-enhancement{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 155px;
+  padding-bottom: 231px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(image/exia.png);  
+ background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-enhancement h1{
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 60px;
+  text-shadow: 4px 4px 9px black;
+}
+
+.container-enhancement1{
+  text-align: center;
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 50px;
+  text-decoration-line: underline;
+  padding-bottom: 20px;
+}
+
+.container-enhancement2{
+  padding-top: 20px;
+  border-top: 3px solid #33f6e5;
+  padding-bottom: 30px;
+}
+
+.container-enhancement2 h3{
+  padding-left: 20px;
+  color: #a0b6f7;
+  font-size: 35px;
+  text-decoration-line: underline;
+  padding-bottom: 20px;
+}
+
+.container-enhancement2 h4{
+  padding-left: 20px;
+  color: #cd9bfc;
+  font-size: 30px;
+  text-decoration-line: underline;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.container-enhancement2 p{
+  padding-left: 20px;
+  color: #ffff29;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.container-enhancement2 li{
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.container-enhancement2 a{
+  color: #33f6e5;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+/* CSS style for Acknowledgement */
+.container-acknowledgement{
+	margin: auto;
+	padding: 10px;
+  border-bottom: 5px solid #33f6e5 ;
+  padding-top: 155px;
+  padding-bottom: 231px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(image/exia.png);  
+ background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-acknowledgement h1{
+  padding-left: 20px;
+  color: #33f6e5;
+  font-size: 60px;
+  text-shadow: 4px 4px 9px black;
+}
+
+@media all and (max-width :589px) {
+  .container-acknowledgement h1{
+    padding-left: 20px;
+    color: #33f6e5;
+    font-size: 50px;
+    text-shadow: 4px 4px 9px black;
+  }
+}
+
+@media all and (max-width :500px) {
+  .container-acknowledgement h1{
+    padding-left: 20px;
+    color: #33f6e5;
+    font-size: 40px;
+    text-shadow: 4px 4px 9px black;
+  }
+}
+
+@media all and (max-width :405px) {
+  .container-acknowledgement h1{
+    padding-left: 20px;
+    color: #33f6e5;
+    font-size: 30px;
+    text-shadow: 4px 4px 9px black;
+  }
+}
+
+.container-acknowledgement1{
+  text-align: center;
+  padding-top: 10px;
+  color:  #33f6e5;
+  padding-bottom: 20px;
+  font-size: 45px;
+}
+
+.container-acknowledgement2{
+  width: 90%;
+  padding-top: 20px;
+  border-top: 3px solid #33f6e5;
+  padding-bottom: 30px;
+}
+
+
+.container-acknowledgement2 h3{
+  padding-left: 20px;
+  color: #a0b6f7;
+  font-size: 35px;
+  text-decoration-line: underline;
+  padding-bottom: 10px;
+}
+
+.container-acknowledgement2 h4{
+  padding-left: 20px;
+  color: #cd9bfc;
+  font-size: 30px;
+  text-decoration-line: underline;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.container-acknowledgement2 p{
+  padding-left: 20px;
+  color: #ffff29;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.container-acknowledgement2 a{
+  color: #33f6e5;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+/* Back To Top */
+.scrollTop {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  width: 130px;
+  height: 30px;
+  background: #1a1a1a;
+  cursor: pointer;
+  border-radius: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid #33f6e5;
+  color: #33f6e5;
+}
+
+.scrollTop.active{
+  bottom: 15px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.scrollTop:hover{
+  border: 3px solid #1a1a1a;
+  color: #1a1a1a;
+  background: #ffff29;
+}
+
+/* Time */
+.time{
+  color: #33f6e5;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px
+}

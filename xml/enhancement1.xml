@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>Back To Top</para>
+  <para>
+    <inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/>
+  </para>
+  <orderedlist>
+    <listitem>
+      <para><link linkend="">Timeline +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="about-me.html">About Me</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+    </listitem>
+    <listitem>
+      <para><link linkend="">Enchancement +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+    </listitem>
+  </orderedlist>
+  <para>Enhancement</para>
+  <sect1>
+    <title>Enchancement 1</title>
+    <sect2>
+      <title>Youtube Video</title>
+      <para>Youtube Videos are shown by the website on a few pages such as the index page, UC page, CE page, AD page, BF page. The purpose of adding the videos is to enhance the user's experience when browsing through my website and with the hope of leaving a good impression on them. Plus, since my website has a lot of information, visitors can watch my videos to refresh their boringness. Users can click on the video and the video would start playing just as how Youtube works.</para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=OOy764mDtiA">https://www.youtube.com/watch?v=OOy764mDtiA</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>Dropdown Navigation Bar</title>
+      <para>The dropdown menu is located on top of all pages of the website. With the use of a dropdown navigation bar, the users can have a clearer indication of what is being offered by the website and what they can find and expect from the website. Furthermore, with this, users can easily pinpoint the information they want without the need of venturing into the whole website.</para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=rgUp302f_lY&amp;t=335s">https://www.youtube.com/watch?v=rgUp302f_lY&amp;t=335s</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>Responsive Navigation Bar</title>
+      <para>The responsive menu is on all pages of the website. When the width of the screen is reduced to a certain about of pixel, the dropdown menu would be replaced with a retractable menu. With a press on the top right corner, the retractable menu would appear, vice versa to how to make it disappear. This is created with the hopes of enhancing the user's experience by removing the clogged-up menu bar on top when the user reduces the size of the browser and replacing it with a more cleaner and arranged menu.</para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=gXkqy0b4M5g">https://www.youtube.com/watch?v=gXkqy0b4M5g</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>CSS Combinators </title>
+      <para>CSS combinators are used on all pages of the website. Such as in the responsive and dropdown menu, descendant, general sibling, and adjacent sibling combinator are used. Descendant combinators are also used in some parts of all the pages when the website is built. The CSS combinators helped to enhance the overall smoothness of responsive and the dropdown menu is not used a lot in the website as it was more of a later discovered thing while the creation of the website.</para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=XAjYsjXP5Dc">https://www.youtube.com/watch?v=XAjYsjXP5Dc</ulink></para>
+      </sect3>
+    </sect2>
+    <sect2>
+      <title>CSS Pseudo Elements</title>
+      <para>CSS pseudo-elements are only implemented into the responsive and dropdown menu only this is because it was found very late into the assignment. Elements such as :before and :after are used to enhance the performance of the menu. The founding of this helps me to improve my coding skills.</para>
+      <sect3>
+        <title>Page Implementation</title>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="uc.html">UC Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">CE Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">AD Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">BF Page</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+      <sect3>
+        <title>Cited From</title>
+        <para>Idea From: <ulink url="https://www.youtube.com/watch?v=OtBpgtqrjyo&amp;t=342s">https://www.youtube.com/watch?v=OtBpgtqrjyo&amp;t=342s</ulink></para>
+        <para><inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/> </para>
+        <para>The Gundam information center that provides information of your favourite Gundam and characters.</para>
+        <para>Contact Me</para>
+        <para>Phone: +6013-272-8183</para>
+        <para>Location: 2-chōme-44-10 Kamiigusa, Suginami City, Tokyo 167-0023, Japan</para>
+        <para>Quick Links</para>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="index.html">Homepage</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="about-me.html">About Me</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+          </listitem>
+        </orderedlist>
+        <para>Timeline</para>
+        <orderedlist>
+          <listitem>
+            <para><olink targetdocent="uc.html">Universal Century</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ce.html">Cosmic Era</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="ad.html">Anno Domini</olink> </para>
+          </listitem>
+          <listitem>
+            <para><olink targetdocent="bf.html">Build Fighter</olink> </para>
+          </listitem>
+        </orderedlist>
+      </sect3>
+    </sect2>
+  </sect1>
+</article>

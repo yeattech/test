@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+  <para>Back To Top</para>
+  <para>
+    <inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/>
+  </para>
+  <orderedlist>
+    <listitem>
+      <para><link linkend="">Timeline +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="about-me.html">About Me</olink> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+    </listitem>
+    <listitem>
+      <para><link linkend="">Enchancement +</link> </para>
+    </listitem>
+    <listitem>
+      <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+    </listitem>
+  </orderedlist>
+  <para>Welcome to The Gundam Nation!</para>
+  <para>The Gundam information center where you can dive in and find information of your favourite Gundam and characters.</para>
+  <sect1>
+    <title>Watch the latest series of Gundam on Youtube!</title>
+    <para> </para>
+  </sect1>
+  <sect1>
+    <title>Latest News of Gundam!</title>
+    <informaltable frame="all">
+      <tgroup cols="3"><tbody><row><entry><para><inlinegraphic fileref="#image/oct01.jpg" width="0.8071inch" depth="0.4138inch"/></para></entry><entry><para><inlinegraphic fileref="#image/sep30.jpg" width="0.8071inch" depth="0.4138inch"/></para></entry><entry><para><inlinegraphic fileref="#image/sep23.jpg" width="0.8071inch" depth="0.4138inch"/></para></entry></row><row><entry><para><ulink url="https://en.gundam.info/news/event/02_4579.html">Gundam Factory Yokohama Online Tour Backyard Tour Mission 0!October 01,2021</ulink></para></entry><entry><para><ulink url="https://en.gundam.info/news/info/02_4588.html">GUNDAM.INFO October Streaming Calendar Has Been Updated!September 30,2021</ulink></para></entry><entry><para><ulink url="https://en.gundam.info/news/gunpla/01_5686.html">SDW HEROES Wukong Impulse Gundam DX Set Shipping Today!September 23,2021</ulink></para></entry></row></tbody></tgroup>
+    </informaltable>
+    <para><inlinegraphic fileref="#image/logo.png" width="0.8071inch" depth="0.4138inch"/> </para>
+    <para>The Gundam information center that provides information of your favourite Gundam and characters.</para>
+    <para>Contact Me</para>
+    <para>Phone: +6013-272-8183</para>
+    <para>Location: 2-chōme-44-10 Kamiigusa, Suginami City, Tokyo 167-0023, Japan</para>
+    <para>Quick Links</para>
+    <orderedlist>
+      <listitem>
+        <para><olink targetdocent="index.html">Homepage</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="timeline.html">Timeline</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="enquiry.html">Enquiry</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="about-me.html">About Me</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="disclaimer.html">Disclaimer</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="enhancement.html">Enhancement</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="acknowledgement.html">Acknowledgement</olink> </para>
+      </listitem>
+    </orderedlist>
+    <para>Timeline</para>
+    <orderedlist>
+      <listitem>
+        <para><olink targetdocent="uc.html">Universal Century</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="ce.html">Cosmic Era</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="ad.html">Anno Domini</olink> </para>
+      </listitem>
+      <listitem>
+        <para><olink targetdocent="bf.html">Build Fighter</olink> </para>
+      </listitem>
+    </orderedlist>
+  </sect1>
+</article>
