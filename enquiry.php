@@ -21,7 +21,7 @@
 			<div class="container-enquiry1">
 				<h2 class="enquiry-h1"> Enquiry Form </h2>
 			</div>
-			<form id="enquiry_form" method="post" action="mailto:jonathantang2016@gmail.com" enctype="text/plain" novalidate="novalidate">
+			<form id="enquiry_form" method="post" action="enquiry_process.php" /*enctype="text/plain"*/ novalidate="novalidate">
 
 				<fieldset>
 					<legend><strong><span class="enquiry-span"> Personal Information </span></strong></legend>
